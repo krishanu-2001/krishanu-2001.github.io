@@ -8,7 +8,6 @@ function myFunction() {
 
 }
 window.addEventListener('load', function () {
-	alert("hello");
 	$("#checkbox1").click(myFunction);
 	var slideIndex = 0;
 	showSlides();

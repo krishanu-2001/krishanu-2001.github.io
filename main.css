@@ -123,6 +123,9 @@ body{
 }
 
 
+.border_class{
+  border:1px solid blue;
+}
 
 .switch {
   position: relative;

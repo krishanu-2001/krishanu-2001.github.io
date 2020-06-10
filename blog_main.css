@@ -1,3 +1,14 @@
+label{
+	color: #dddddd;
+	border-radius: 20px;
+	background-color: #555555;
+	min-width: 70px;
+	margin-left: 20px;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 .blog_panel{
 	font-size: 2em;
 	border: 2px solid black;
@@ -66,4 +77,20 @@
 
 .bigQ{
 	font-size: 1em;
+}
+
+.insertHR{
+	background-color: black;
+	border: 0.5px #444444 solid;
+}
+
+.notes{
+	margin-left: 50px; 
+	opacity: 0.5
+				
+}				
+.cpp_body{
+	background-color: black;
+	color: #dddddd;
+	text-align: left;
 }

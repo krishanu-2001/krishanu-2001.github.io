@@ -1,0 +1,508 @@
+<!-- Welcome to blog-Mean Stack 
+ Ready to use Text formatting classes
+ file : blog_main.css
+ 	* class = "highlight" for <span>
+ 	* class = "highlightblock" for <div>
+ 	* class = "bigQ" for <span>
+ 	* class = "sub-title"
+ 	* class = "insertHR" for <hr>
+ 	* class = "notes" for span, makes transluscent notes
+ 	* for cpp codes use
+ 		<pre class = "brush: cpp cpp_body">
+		<code>
+		_________(code goes here)_________	
+		</code>
+		</pre>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krishanu-2001</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="blog_main.css">
+
+  <script type="text/javascript" src="script.js"></script>
+  
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body class="abcd">
+
+
+
+<h2 class="abc">Dark Mode</h2>
+<label class="switch" >
+  <input type="checkbox" id="checkbox1">
+  <span class="slider round"></span>
+</label>
+
+<div class = "blog_panel col col-sm abc">
+	<div class = "blog_title">
+		Blog 
+	</div>
+</div>
+<div class="row">
+	<div class = "right_panel col-sm-3 abc">
+		<div>
+			hello paste links here:<br>
+			<a href="index.html">Home</a><br>
+			<a href="blog_meanstack.html">Meanstack blog</a><br>
+		</div>
+	</div>
+	<div class="col-sm-8 abc left_panel">
+		<div>
+			<p class = "blog_post_title">Number Theory</p>
+		</div>
+		<br>
+		<div class="box1">
+			<span class = "sub_title">Summary</span>
+			<br><br>
+			<p>
+				This blog is meant as an introduction to Number theory.<br>
+				It consists of some certain algorithms in ready to use format.
+				Plug and play type.<br>
+				Some handy links to parts:<br>
+				<ol>
+					<li><a href = "#Mod">Modular Arithmetic</a></li>
+					<li><a href = "#Bin">Binary Exponenciation</a></li>
+					<li><a href="#Fer">Fermat's Little Theorem</a></li>
+					<li><a href = "#Pri">Prime Factorization</a></li>
+					<li><a href = "#Div">Divisors</a></li>
+					<li><a href = "#Spe">Special technique(sieve)</a></li>
+					<li><a href = "#Eul">EulerPhi function</a></li>
+					<li><a href = "#Pro">Problems List</a></li>
+				</ol>
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Mod"></i>
+			<span class = "sub_title">Modular Arithmetic</span>
+			<br><br>
+			<p>
+				It involves dealing with distribution on % sign over operations.
+				<br>
+				<div class="highlightblock">
+					<span class="bigQ" style="margin-left: 10px;"><u>quicklist</u></span>
+					<br>
+					<ol>
+						<li>
+							<span  style="margin-left: 10px;margin-right: 10px">(a+b)%MOD</span> = 
+							<span style="margin-left: 10px;margin-right: 10px">(a%MOD + b%MOD)%MOD</span>
+						</li>
+						<li>
+							<span  style="margin-left: 10px;margin-right: 10px">(a-b)%MOD</span> = 
+							<span style="margin-left: 10px;margin-right: 10px">(a%MOD - b%MOD + MOD)%MOD</span>
+						</li>
+						<li>
+							<span  style="margin-left: 10px;margin-right: 10px">(a*b)%MOD</span> = 
+							<span style="margin-left: 10px;margin-right: 10px">(a%MOD * b%MOD)%MOD</span>
+						</li>
+
+					</ol>	
+				</div>
+				Division involves a special technique discussed as follows,<br>
+				say we are given a, b. We are required to find (a/b)%MOD.
+				<br>
+				1. It is defined iff a%b == 0,<br>
+				2. In such case:
+				<br>
+				<div class="highlightblock">
+					<span  style="margin-left: 10px;margin-right: 10px">(a/b)%MOD</span> = 
+					<span style="margin-left: 10px;margin-right: 10px">(a%MOD * i%MOD)%MOD</span>
+					<br>
+					<br>
+					where, 'i' is the Modular inverse of b,
+					<br>
+					it is calculated using fermat's little theorem post below.
+				</div>
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id = "Bin"></i>
+			<span class = "sub_title">Binary Exponenciation</span>
+			<br><br>
+			<p>
+				Although basic pow(x,y) is already implemented in most of the standard libraries. calculating x<sup>y</sup> is very important for many questions in log( y ) time complexity. So following is the implementation.
+				<div class="">
+
+<pre class = "brush: cpp cpp_body">
+<code>
+ll binexpy(ll x, ll y)
+{
+	if(y == 0)
+	{
+		return 1;
+}
+	else if(y%2==0)
+	{
+		return binexpy(x*x,y/2);
+	}
+	else if(y%2==1)
+	{
+		return x*binexpy(x*x,y/2);
+	}
+} 
+</code>
+</pre>
+				
+				</div>
+				<div>
+					Most of the times x<sup>y</sup> will exceed 10<sup>18</sup>
+					so we are expected to print the answer modulo some prime number.
+					some of these prime numbers are :<br> 
+					<span class="highlight">
+						<span style="margin-right: 50px">
+							1000000007 ( 10<sup>9</sup> + 7 )		
+						</span>
+						<span style="margin-right: 50px">
+							1000003 ( 10<sup>6</sup> + 3 )		
+						</span>
+						
+					</span>
+				</div>
+				<br>
+				So we are now led to implementing binary exponentiation with MOD( required prime number for modulus operation )
+				<div class="">
+
+<pre class = "brush: cpp cpp_body">
+<code>
+ll binexpymod(ll x,ll n,ll mod)
+{
+	ll prod = 1;
+	if(n==0)
+	{
+		return 1;
+	}
+	else if(n%2==0)
+	{
+		prod = ((x%mod)*(x%mod))%mod;
+		return binexpymod(prod,n/2,mod);
+	}
+	else{
+		prod = ((x%mod)*(x%mod))%mod;
+		return ((x%mod)*binexpymod(prod,(n-1)/2,mod))%mod;
+	}
+}
+</code>
+</pre>
+				
+				</div>
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Fer"></i>
+			<span class = "sub_title">Fermat's Little Theorem</span>
+			<br><br>
+			<p>
+				Simply stated Fermat's little theorem :<br> 
+				<span class="highlight"> a<sup>p-1</sup> = 1(mod p) </span><br>
+				Note: p-1 comes from PHI(p) = p-1 for primes<br>
+				<hr class="insertHR">
+				Now to implement it we will use binexpymod as defined above:
+				<br>
+				<div class="highlightblock">
+					ans = binexpymod(a,MOD-2,MOD);
+				<br>where, ans = a<sup>-1</sup>(% MOD), <span style="margin-left: 50px; opacity: 0.5;">
+				Note (% MOD) = (mod p)</span>
+				<br>
+				<br>	/**	
+				<br>	 * Quick explanation:
+				<br>	 *    from <a href="#Fer">FLT</a>:  a<sup>p-1</sup> = 1(mod p)
+				<br>     *    hence, a<sup>p-2</sup> = a<sup>-1</sup>(mod p)
+				<br>	**/
+				</div>
+				<br>
+
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Pri"></i>
+			<span class = "sub_title">Prime Factorization</span>
+			<br><br>
+			<p>
+				Prime factorization of 12:<br>
+				<span class="highlight">12 : 2 X 2 X 3</span><br><br>
+				<span class="highlight">19 : 19</span><br>
+				<span class="notes">Note: 1 is not a prime</span>
+				<hr class="insertHR">
+				Implementation as follows: O ( root(N) ) 
+<pre class = "brush: cpp cpp_body">
+<code>
+void primeFactors(ll n)
+{
+	vector &lt ll &gt temp;
+    while (n % 2 == 0)
+    {
+        temp.pb(2);
+        n = n/2;
+    }
+    for (int i = 3; i <= sqrt(n); i = i + 2)
+    {
+        while (n % i == 0)
+        {
+            temp.pb(i);
+            n = n/i;
+        }
+    }
+    if (n > 2)
+        temp.pb(n);
+
+	//do what you want with vector<ll>
+}
+</code>
+</pre>
+				<div>
+					Now sometimes for query based questions we may require O( log N ) processing, so let's see what we got.
+					<hr class="insertHR">
+					Implementation in  preprocessing: O(N log N), queries O( log a )<br>
+				</div>
+<pre class = "brush: cpp cpp_body">
+<code>
+const ll N = 1e7; // check this please reduce to 5,000,005 if required
+//prime factors in O(log n)
+int primechk[N];
+int fprime[N];
+void preprocess(void)
+{
+    int i, j;
+    for(i=2 ; i< N ; i++)
+    {
+        primechk[i]=1;
+    }
+    for(i=2 ; i< N ; i++)
+    {
+        if(primechk[i]==1)
+        {
+            fprime[i]=i;
+            for(j=2 ; i*j< N ; j++)
+            {
+                primechk[i*j]=0;
+                if(fprime[i*j]==0)
+                {
+                    fprime[i*j]=i;
+                }
+            }
+        }
+    }
+}
+/**
+ * Prime factorization in log n using sieve
+**/
+vector &lt ll &gt primefactlogn(ll n)
+{
+	vector &lt ll &gt temp;
+	while(n!=1)
+    {
+        temp.pb(fprime[n]);
+        n=n/fprime[n];
+    }
+    return temp;
+}
+
+</code>
+</pre>
+
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Div"></i>
+			<span class = "sub_title">divisors</span>
+			<br><br>
+			<p>
+				Divisors of 12:<br>
+				<span class="highlight">12 : 1, 12, 2, 6, 3, 4</span><br><br>
+				<span class="highlight">19 : 1, 19</span><br>
+				<span class="notes">Note: Order can be sorted</span>
+				<hr class="insertHR">
+				Implementation as follows: O ( root(N) ) 
+<pre class = "brush: cpp cpp_body">
+<code>
+vector<ll> divisors(ll x)//O( sqrt(n) )
+{
+	vector &lt ll &gt divs;
+	for(int i=1;i*i<=x;i++)
+	{
+		if(x%i == 0)
+		{
+			if(i*i == x)
+			{
+				divs.pb(i);
+			}
+			else
+			{
+				divs.pb(i);
+				divs.pb(x/i);
+			}
+		}
+	}
+	return divs;
+}//sort if you want
+
+</code>
+</pre>
+
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Spe"></i>
+			<span class = "sub_title">Special techniques for 1 to n type factor counts</span>
+			<br><br>
+			<p>
+				Many divisors counting, and range 1 to N processing can be done by the following: 
+<pre class = "brush: cpp cpp_body">
+<code>
+// sample program to get minimum prime divisor of all numbers 1 to N
+for(int i=2;i< N; i++)
+{
+	if(!visited[i])
+	for(int j=i;j< N;j+=i)
+	{
+		sml[j] = i;//smallest prime divisor sml of number i, sml[1] = 0
+	}
+}
+
+// sample program to get prime factors power's sum
+// for 1 - N all numbers using smallest prime divisor and recursion
+for(int i=2; i< N ; i++)
+{
+	count[i] = 0;
+	ll temp_i = i;
+	while(temp_i % sml[i] == 0)
+	{
+		count[i]++;
+	}
+	count[i] += count[temp_i];
+}
+
+</code>
+</pre>
+				<div>
+					Yes you have guessed it right. This program gives the sum of power's of prime factors:<br>
+					<div class="highlight">24 = 2 X 2 X 2 X 3 
+						= 2<sup>3</sup> 3<sup>1</sup><br>
+						count[24] = 3+1 = 4 <br>
+
+					</div>
+
+					<div>
+						Some analysis on time complexity:<br>
+						T = N + (N/2) + (N/3) ...<br> 
+						which becomes O ( N log N)<br>
+						and if we only iterate through primes multiples, T becomes O( N log( log N) )<br>
+						and that's super efficient, right!
+						<br>
+						<br>
+						<span class="notes">Note: this technique is commonly used in sieve technique, strikes something?</span>
+					</div>
+
+				</div>
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Eul"></i>
+			<span class = "sub_title">EulerPHI function</span>
+			<br><br>
+			<p>
+				PHI(n) = numbers of coprimes in 1-n for n<br>
+				<span class="notes">Note: for prime p PHI(p) = p-1 </span><br>
+
+<pre class = "brush: cpp cpp_body">
+<code>
+// sample program to calculate PHI(n) for x
+ll phi(ll x) 
+{ 
+    ll ans = x;
+    for (int p = 2; p * p <= x; p++) {  
+        if (x % p == 0) { 
+              
+            while (x % p == 0) 
+                x /= p; 
+            ans -= ans / p; 
+        } 
+    } 
+    if (x > 1) 
+        ans -= (ans / x); 
+    return ans; 
+} 
+</code>
+</pre>
+				<div>
+					One Question that can be solved using PHI is:
+					<br>
+					Q) Given integer x, calculate sz( LCM(i,n) ), for i in range(1,N]<br>
+					answer to query is n*[1+sz(PHI(i)])/2 , <br>
+					<span class="notes">
+						Note: sz(PHI(i)) = summation PHI[i] for i in range(1,n]
+					</span> <br>
+
+				</div>
+			</p>
+
+		</div>
+		<br>
+		<br>
+		<div class="box1">
+			<i id="Pro"></i>
+			<span class = "sub_title">Problems</span>
+			<br><br>
+			<p>
+				<a href="https://codeforces.com/problemset/problem/230/B">
+					T-Primes <label>cf</label><label>primes</label>
+				</a>
+				<br>
+				<a href="https://codeforces.com/problemset/problem/711/E">			Birthday Paradox<label>cf</label><label>CRT</label>
+					<label>factorials</label><label>GCD</label>
+				</a>
+				<br>
+				<a href="https://codeforces.com/problemset/problem/1062/B">
+					Math<label>cf</label><label>factorization</label>
+				</a>
+				<br>
+				<a href="https://codeforces.com/problemset/problem/495/B">			Modular Equations<label>cf</label><label>Modular Arithmetic</label>
+				</a>
+				<br>
+				<a href="https://codeforces.com/contest/222/problem/C">
+					Reducing Fractions<label>cf</label><label>logn factorization</label>
+				</a>
+			</p>
+
+		</div>
+		<br>
+	</div>
+</div>
+  <script src="js/shCore.js"></script>
+  <script src="js/shBrushCpp.js"></script>
+  <script>
+    SyntaxHighlighter.all()
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!-- Welcome to blog-Mean Stack 
+ Ready to use Text formatting classes
+ file : blog_main.css
+  * class = "highlight" for <span>
+  * class = "highlightblock" for <div>
+  * class = "bigQ" for <span>
+  * class = "sub-title"
+  * class = "insertHR" for <hr>
+  * class = "notes" for span, makes transluscent notes
+  * for cpp codes use
+    <pre class = "brush: cpp cpp_body">
+    <code>
+    _________(code goes here)_________  
+    </code>
+    </pre>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krishanu-2001</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="blog_main.css">
+
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="service_unittest.js"></script>
+  <style type="text/css">
+    td{
+      padding-right: 1em;
+    }
+    th{
+      padding-right: 1em;
+
+    }
+  </style>  
+
+</head>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body class="abcd">
+
+
+
+<h2 class="abc">Dark Mode</h2>
+<label class="switch" >
+  <input type="checkbox" id="checkbox1">
+  <span class="slider round"></span>
+</label>
+
+<div class="row abcd abc" style="margin-left: 10px;">
+  <div class="col-sm-3" style="text-align: left; margin-bottom: 10px;">
+      <div>
+        <span style="font-size: 2em; font-family: fantasy;">Elements List</span>
+        <br>
+        <hr class="insertHR" style="width: 50%; display: inline-block;"><br>
+        <table>
+          <tr>
+            <th>
+              tool
+            </th>
+            <th>
+              function
+            </th>
+            <th>
+              parameters
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <label style="margin-left: 0px;">int</label>
+            </td>
+            <td>
+              <span style="margin-left: 0px; color: purple"><i>Add an integer</i></span>
+            </td>
+            <td>
+              <span style="margin-left: 0px;"><i>None</i></span>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              <label style="margin-left: 0px;">char</label>
+            </td>
+            <td>
+              <span style="margin-left: 0px; color: purple"><i>Add a charachter</i></span>
+            </td>
+            <td>
+              <span style="margin-left: 0px;"><i>None</i></span>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              <label style="margin-left: 0px;">string</label>
+            </td>
+            <td>
+              <span style="margin-left: 0px; color: purple"><i>Add a string</i></span>
+            </td>
+            <td>
+              <span style="margin-left: 0px;">| int |</span>
+            </td>
+            
+          </tr>
+        </table>
+      </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      <div>
+        <form>
+          <textarea class="abcd abc" id="input_box" name="input" 
+                    rows="10" cols="50" autocomplete="off" spellcheck="false" placeholder="<int> <char> <string 5>"></textarea><br><br>
+          <span class="button" id="Generate">Generate</span><br><br>
+          
+        </form>
+      </div>
+      <div>
+        <textarea class="abcd abc" readonly="true" id="output_box" name="output" 
+                    rows="10" cols="50" autocomplete="off" spellcheck="false" placeholder="822 f dljjh"></textarea>
+      </div>
+      <br>
+      <div style="font-size:0.7em; ">
+        note: output is randomly generated and any resemblance to natural phenomenon is purely coincidential.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

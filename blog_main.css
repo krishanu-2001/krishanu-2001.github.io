@@ -94,3 +94,21 @@ label{
 	color: #dddddd;
 	text-align: left;
 }
+.button{
+      background-color: blue;
+      color: white;
+      font-size: 1em;
+      font-family: monospace;
+      padding: 10px;
+      border: 2px solid blue;
+}
+
+
+.button:active{
+  font-size: 102%;
+  border-color: grey;
+}
+
+.button:hover{
+	cursor: pointer;
+}

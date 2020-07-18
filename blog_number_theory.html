@@ -1,5 +1,7 @@
 <!-- Welcome to blog-Mean Stack 
  Ready to use Text formatting classes
+ using prism.js and prism.css now
+ deprecated->
  file : blog_main.css
  	* class = "highlight" for <span>
  	* class = "highlightblock" for <div>
@@ -14,6 +16,8 @@
 		</code>
 		</pre>
 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +27,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="prism.js"></script>
   <link href="css/shCore.css" rel="stylesheet" type="text/css" />
   <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="blog_main.css">
+  <link rel="stylesheet" type="text/css" href="prism.css" />
 
   <script type="text/javascript" src="script.js"></script>
   
@@ -139,7 +145,7 @@
 				Although basic pow(x,y) is already implemented in most of the standard libraries. calculating x<sup>y</sup> is very important for many questions in log( y ) time complexity. So following is the implementation.
 				<div class="">
 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 ll binexpy(ll x, ll y)
 {
@@ -178,7 +184,7 @@ ll binexpy(ll x, ll y)
 				So we are now led to implementing binary exponentiation with MOD( required prime number for modulus operation )
 				<div class="">
 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 ll binexpymod(ll x,ll n,ll mod)
 {
@@ -246,7 +252,7 @@ ll binexpymod(ll x,ll n,ll mod)
 				<span class="notes">Note: 1 is not a prime</span>
 				<hr class="insertHR">
 				Implementation as follows: O ( root(N) ) 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 void primeFactors(ll n)
 {
@@ -276,7 +282,7 @@ void primeFactors(ll n)
 					<hr class="insertHR">
 					Implementation in  preprocessing: O(N log N), queries O( log a )<br>
 				</div>
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 const ll N = 1e7; // check this please reduce to 5,000,005 if required
 //prime factors in O(log n)
@@ -338,7 +344,7 @@ vector &lt ll &gt primefactlogn(ll n)
 				<span class="notes">Note: Order can be sorted</span>
 				<hr class="insertHR">
 				Implementation as follows: O ( root(N) ) 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 vector<ll> divisors(ll x)//O( sqrt(n) )
 {
@@ -375,7 +381,7 @@ vector<ll> divisors(ll x)//O( sqrt(n) )
 			<br><br>
 			<p>
 				Many divisors counting, and range 1 to N processing can be done by the following: 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 // sample program to get minimum prime divisor of all numbers 1 to N
 for(int i=2;i< N; i++)
@@ -435,7 +441,7 @@ for(int i=2; i< N ; i++)
 				PHI(n) = numbers of coprimes in 1-n for n<br>
 				<span class="notes">Note: for prime p PHI(p) = p-1 </span><br>
 
-<pre class = "brush: cpp cpp_body">
+<pre class = "language-cpp line-numbers">
 <code>
 // sample program to calculate PHI(n) for x
 ll phi(ll x) 

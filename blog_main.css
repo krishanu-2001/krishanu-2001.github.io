@@ -14,11 +14,13 @@ label{
 	border: 2px solid black;
 	background-color: #001122;
 	padding: 20px;
+
 }
 
 .blog_title{
 	padding: 10px;
 	font-family: fantasy;
+	font-size: 2em;
 	color: white;
 }
 
@@ -111,4 +113,82 @@ label{
 
 .button:hover{
 	cursor: pointer;
+}
+
+.optional_nav{
+	font-size: 0.5em;
+	display: none;
+}
+
+.small-panel{
+	background-color: #1a2a1a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	display: none;
+}
+._small-panel{
+	height: 0;
+}
+
+.image-menu{
+	background-color: red; 
+	width: 50%;
+	height: 50%;
+}
+
+.image-menu:hover{
+	border:1px red solid;
+}
+
+.menud{
+	color: white;
+	display: none;
+}
+
+.menud2{
+	color: white;
+	display: block;
+}
+
+.link1{
+	color: white;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+
+@media screen and (max-width: 800px) {
+  .blog_title {
+  	color: red;
+  	text-align: left;
+  	margin-left: 2em;
+  	float: left;
+
+  }
+  .right_panel{
+  	display: none;
+  }
+  .optional_nav{
+  	display: block;
+  }
+  .left_panel{
+  	width:100%;
+  }
+  .small-panel{
+  	display: inline;
+  }
+  .blog_panel{
+  	display: none;
+  }
+  ._small-panel{
+  	height: 75px;
+  }
+  .dropd{
+  		position: fixed;
+  		right: 0;
+  		top: 0;
+  }
 }

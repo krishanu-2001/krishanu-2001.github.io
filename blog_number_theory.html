@@ -35,30 +35,103 @@
   <link rel="stylesheet" type="text/css" href="prism.css" />
 
   <script type="text/javascript" src="script.js"></script>
-  
+  <script type="text/javascript" src="blog_script.js"></script>
+
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <body class="abcd">
+<div class = "small-panel abc">
+	<div class="row">
+		<div class = "blog_title col col-sm-4" >
+		Bl<span style="font-size: 0.5em;">o</span>g 
+		</div>
+		<div class="dropd col-sm-4">
+			<!--  
+			 	implement dropdown menu with animation effect
 
-
-
-<h2 class="abc">Dark Mode</h2>
-<label class="switch" >
-  <input type="checkbox" id="checkbox1">
-  <span class="slider round"></span>
-</label>
+			-->
+			<img src="ic_drag_handle_white_48dp.png" class="image-menu" id="image-menu" />
+		
+		</div>
+	</div>
+	<br>
+	<table class = "menud" id = "menud">
+		<tr>
+			<td>
+				<div class="row" style="border: 1px white solid;">
+					<div class="col col-sm-3">
+						<a href="index.html" class="link1">HOME</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<br>
+		<tr>
+			<td>
+				<div class="row" style="border: 1px white solid; ">
+					<div class="col col-sm-3">
+						<div class="link1" style="margin-left: 1em;">BLOG</div>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col col-sm-3">
+						<a href="blog_meanstack.html" class="link1" style="margin-left: 2.5em;">* Meanstack</a>
+					</div>
+				</div>
+				<div class="row">
+					
+					<div class="col col-sm-3">
+						<a href="blog_number_theory.html" class="link1" style="margin-left: 2.5em;">* Number-Theory</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="_small-panel">
+</div>
 
 <div class = "blog_panel col col-sm abc">
-	<div class = "blog_title">
-		Blog 
+	<div class="row">
+	<div class = "blog_title col-sm-8">
+		Bl<span style="font-size: 0.5em;">o</span>g 
+	</div>
+	<div class="col" style="text-align: center;">
+		<h2 class="abc"><span style="font-size: 2em;">D</span>ark Mode</h2>
+		<label class="switch" >
+		  <input type="checkbox" id="checkbox1">
+		  <span class="slider round"></span>
+		</label>
+	</div>
+	<div class="optional_nav col">
+		<hr><br>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="blog_number_theory.html" style="color:grey;">Number-theory</a></li>
+
+			</ol>
+		</nav>
+	</div>
 	</div>
 </div>
 <div class="row">
 	<div class = "right_panel col-sm-3 abc">
 		<div>
-			hello paste links here:<br>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="blog_number_theory.html" style="color:grey;">Number-theory</a></li>
+
+			</ol>
+		</nav>
+		</div>
+		<div>
+			quick links here:<br>
 			<a href="index.html">Home</a><br>
 			<a href="blog_meanstack.html">Meanstack blog</a><br>
 		</div>

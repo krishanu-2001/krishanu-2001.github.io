@@ -283,3 +283,7 @@ input:checked + .slider:before {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.Active_{
+  color: red;
+}

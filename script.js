@@ -9,6 +9,7 @@ function myFunction() {
 }
 window.addEventListener('load', function () {
 	$("#checkbox1").click(myFunction);
+	$('#checkbox2').click(myFunction);
 	var slideIndex = 0;
 	showSlides();
 

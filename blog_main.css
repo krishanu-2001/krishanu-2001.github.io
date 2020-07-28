@@ -12,6 +12,11 @@ label{
 .blog_panel{
 	font-size: 2em;
 	border: 2px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 	100%;
 	background-color: #001122;
 	padding: 20px;
 
@@ -24,6 +29,10 @@ label{
 	color: white;
 }
 
+.tango{
+	margin-top: 180px;
+}
+
 .right_panel{
 	background-color: #001122; 
 	border:2px black solid;
@@ -34,7 +43,6 @@ label{
 
 .left_panel{
 	height: 120vh;
-	overflow: auto;
 }
 
 .blog_post_title{
@@ -160,6 +168,37 @@ label{
 }
 
 
+.bottom-left{
+	float: left;
+}
+
+.footer{
+	margin-top: 100px;
+
+}
+
+.exbar{
+	background-color: #1ffabf;
+	height: 50px;
+	margin-bottom: 25px;
+	overflow: visible;
+	padding: 10px;
+	border:2px solid black;
+	border-radius: 20px;
+}
+
+#git_id:hover{
+	border:2px white solid;
+	border-radius: 100px;
+	background-color: #aaaafa;
+}
+#git_id:focus{
+	border:2px white solid;
+	border-radius: 100px;
+	background-color: #aaaafa;
+}
+
+
 @media screen and (max-width: 800px) {
   .blog_title {
   	color: red;
@@ -191,4 +230,9 @@ label{
   		right: 0;
   		top: 0;
   }
+  #fgg{
+  	font-size: 2em;
+  	text-align: left;
+  }
+  
 }

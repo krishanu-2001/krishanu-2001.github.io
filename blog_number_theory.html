@@ -33,10 +33,10 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="blog_main.css">
   <link rel="stylesheet" type="text/css" href="prism.css" />
-
+  <link rel="stylesheet" type="text/css" href="typewriter.css" />
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="blog_script.js"></script>
-
+  <script type="text/javascript" src="typewriter.js"></script>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,6 +88,15 @@
 						<a href="blog_number_theory.html" class="link1" style="margin-left: 2.5em;">* Number-Theory</a>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col" style="text-align: center;">
+						<h4 class="abc"><span style="font-size: 1.5em;">D</span>ark Mode</h4>
+						<label class="switch" >
+					  	<input type="checkbox" id="checkbox1">
+					 	 <span class="slider round"></span>
+						</label>
+					</div>
+					</div>
 			</td>
 		</tr>
 	</table>
@@ -119,7 +128,10 @@
 	</div>
 	</div>
 </div>
-<div class="row">
+
+
+
+<div class="row tango">
 	<div class = "right_panel col-sm-3 abc">
 		<div>
 		<nav aria-label="breadcrumb">
@@ -576,8 +588,33 @@ ll phi(ll x)
 
 		</div>
 		<br>
+
+		<div class = "footer">
+		<hr style=" border: 5px #aaaafa solid; border-radius: 10px;" />
+		<br>
+		<div class = "row" style="margin-bottom: 25px;">
+			<div class="col-sm-3" style="text-align: center;">
+				<img src="PNG/GitHub-Mark-64px.png" id="git_id" style="width: 50px;" />
+			</div>
+			<div class="col-sm-7">
+				<div class="exbar">
+					<!--
+						add text animation here
+					-->
+					 <p class="line-1 anim-typewriter" id="fgg">My Github Account -<a href="https://github.com/krishanu-2001"> krishanu-2001</a></p>
+
+				</div>
+			</div>
+
+		</div>
+		</div>
+
+
 	</div>
 </div>
+
+
+
   <script src="js/shCore.js"></script>
   <script src="js/shBrushCpp.js"></script>
   <script>

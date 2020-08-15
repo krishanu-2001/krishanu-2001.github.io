@@ -64,6 +64,10 @@ label{
 	border-radius: 20px;
 	background-color: #9999ff;
 }
+a {
+	color: white;
+}
+
 
 .highlight{
 	background-color: black;
@@ -154,6 +158,7 @@ label{
 .menud{
 	color: white;
 	display: none;
+	background-color: #001122;
 }
 
 .menud2{
@@ -198,8 +203,13 @@ label{
 	background-color: #aaaafa;
 }
 
+.button1{
+	margin:10px;
+	background-color: #aaeeff;
+}
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 992px) {
   .blog_title {
   	color: red;
   	text-align: left;
@@ -231,7 +241,7 @@ label{
   		top: 0;
   }
   #fgg{
-  	font-size: 2em;
+  	font-size: 1.5em;
   	text-align: left;
   }
   

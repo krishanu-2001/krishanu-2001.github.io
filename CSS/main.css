@@ -122,6 +122,12 @@ body{
   color: white;
 }
 
+.div1{
+  background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
+  margin-bottom: 10px;
+  padding: 50px;
+}
+
 
 .border_class{
   border:1px solid blue;

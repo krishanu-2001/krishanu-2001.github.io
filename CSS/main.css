@@ -126,8 +126,8 @@ body{
   background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
   margin-bottom: 10px;
   padding: 50px;
+  text-shadow: 2px 0px black;
 }
-
 
 .border_class{
   border:1px solid blue;
@@ -228,6 +228,10 @@ input:checked + .slider:before {
   margin: 10%;
 }
 
+.Xcard-body:hover{
+    box-shadow: 10px 15px 200px 10px #ddd;
+}
+
 .Xcard-head{
 
 }
@@ -239,7 +243,7 @@ input:checked + .slider:before {
 .Xcard-foot > p{
   border-top: #2196d4 2px solid;
   background-color: #2196F3;
-  height: 50px;
+  min-height: 50px;
   padding-top: 10px;
   margin: 0;
 }

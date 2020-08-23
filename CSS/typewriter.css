@@ -36,3 +36,14 @@ body{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+@media screen and (max-width: 992px) {
+  #fgg{
+    font-size: 120%;
+    text-align: left;
+  }
+  #fgg > a{
+    color: blue;
+  }
+  
+}

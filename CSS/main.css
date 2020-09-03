@@ -364,8 +364,10 @@ input:checked + .slider:before {
 }
 
 .active{
-  background-color: #a1a1a1;
-  opacity: 0.5;
+  opacity: 0.8;
+  background-color: #a38560;
+background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+
   border: 1px;
   border-radius: 3px;
 }

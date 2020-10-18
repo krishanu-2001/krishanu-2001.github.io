@@ -64,9 +64,10 @@ label{
 	border-radius: 20px;
 	background-color: #9999ff;
 }
-a {
-	color: white;
+.strong_a {
+	text-shadow: 0.5px 0.5px 0.5px black;
 }
+
 
 
 .highlight{

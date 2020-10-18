@@ -15,8 +15,12 @@ body{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
+    color: black;
 }
+#line-1 > a{
+    color: blue;
+  }
 
 .hello{
   background-color: red;

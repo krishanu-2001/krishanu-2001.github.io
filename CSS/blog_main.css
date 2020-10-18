@@ -9,6 +9,10 @@ label{
 	padding-left: 5px;
 }
 
+.row{
+	margin: 0;
+}
+
 .blog_panel{
 	font-size: 2em;
 	border: 2px solid black;

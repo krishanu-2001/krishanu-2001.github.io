@@ -132,6 +132,8 @@ body{
   box-shadow: 4px 4px 5px black;
   margin: 0;
   padding: 0;
+  color: black;
+  background-color: white;
   height: 50px;
   width: 100%;
 }
@@ -140,6 +142,8 @@ body{
   display: inline-block;
   width: 30%;
   height: 50px;
+  color: black;
+  background-color: white;
   background: rgb(2,0,36);
   background: linear-gradient(40deg, rgba(250,0,60,1) 0%, rgba(130,124,60,0.5) 65%, rgba(0,212,255,1) 130%);
   

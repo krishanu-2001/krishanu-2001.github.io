@@ -369,6 +369,16 @@ input:checked + .slider:before {
   background-color: #717171;
 }
 
+.exbar{
+  background-color: #5fefbc;
+  height: 50px;
+  margin-bottom: 25px;
+  overflow: visible;
+  padding: 10px;
+  border:2px solid black;
+  border-radius: 20px;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

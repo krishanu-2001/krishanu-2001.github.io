@@ -1,2 +1,2 @@
 # krishanu-2001.github.io
-website_all_in_one
+My portofolio website. I add personal blogs and simple services here!

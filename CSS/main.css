@@ -123,11 +123,21 @@ body{
 }
 
 .div1{
-  background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
+  /*background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
+  */
   margin-bottom: 10px;
   padding: 50px;
   text-shadow: 2px 0px black;
 }
+
+.div12{
+  /*background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
+  */
+  background-image: url("../PNG/backg7.png");
+  margin-bottom: 10px;
+  padding: 50px;
+}
+
 .Announcement-body{
   box-shadow: 4px 4px 5px black;
   margin: 0;
@@ -156,6 +166,11 @@ body{
   font-size: 2em;
   background-color: white;
 
+}
+
+.endIcon{
+  width: 50px;
+  height: 50px;
 }
 
 .border_class{
@@ -249,6 +264,16 @@ input:checked + .slider:before {
 	border-radius: 100px;
 	background-color: #aaaafa;
 }
+#linkedin_id:hover{
+  border:2px white solid;
+  border-radius: 10px;
+  background-color: #ada;
+}
+#linkedin_id:focus{
+  border:2px white solid;
+  border-radius: 10px;
+  background-color: #ada;
+}
 
 .Xcard-body{
   text-align: center;
@@ -261,8 +286,18 @@ input:checked + .slider:before {
     box-shadow: 10px 15px 200px 10px #ddd;
 }
 
-.Xcard-head{
+.xCard-img{
+  width: 100%; 
+  height: 200px;
+}
+.xCard-head{
+  overflow: hidden;
+}
 
+.xCard-head:hover .xCard-img,
+.xCard-head:focus .xCard-img{
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 .Xcard-foot > span{

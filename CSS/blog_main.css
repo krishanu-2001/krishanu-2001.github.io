@@ -21,7 +21,9 @@ label{
 	left: 0;
 	z-index: 999;
 	width: 	100%;
-	background-color: #001122;
+	/*background-color: #001122;
+	*/
+	background-image: url("../PNG/backg5.png");
 	padding: 20px;
 
 }
@@ -38,7 +40,9 @@ label{
 }
 
 .right_panel{
-	background-color: #001122; 
+	/*background-color: #001122; 
+	*/
+	background-image: url("../PNG/backg5.png");
 	border:2px black solid;
 	color: white;
 	margin-right: 20PX;
@@ -69,7 +73,7 @@ label{
 	background-color: #9999ff;
 }
 .strong_a {
-	text-shadow: 0.5px 0.5px 0.5px black;
+	text-shadow: 0.5px 0px 0px black;
 }
 
 

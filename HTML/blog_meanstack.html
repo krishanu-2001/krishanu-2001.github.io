@@ -196,7 +196,24 @@
 			<br><br>
 			<p>
 				This blog deals with the most simple ways to push your app to github repo, so let's get started!<br>
-				create a repository online, clone it in an empty directory on your pc using <i class="highlight">$ git clone "repo_https_url"</i>. Copy all files from your project excluding the <i>node_modules</i> and paste in this empty repository. use the following commands to push to remote repository-<br>
+				create a repository online, <i>go to your projects root folder, open terminal<br /></i>
+				<div class="highlightblock">
+					$ git init<br>
+					$ git remote add origin &lt;&lt;repsitory_name&gt;&gt;<br>
+				</div>
+				<br/>
+				Now add a <i style="background-color: whitesmoke;color: black;"> &nbsp;.gitignore&nbsp;</i> file<br />
+				Beware: .gitignore is extension
+				copy this text
+				<br /><br />
+				<div class="highlightblock">
+					.idea/<br />
+					.vscode/<br />
+					node_modules/<br />
+				</div>
+				<br />
+				Now commit and push data to repository
+				<br /><br />
 				<div class="highlightblock">
 					$ git add .<br>
 					$ git commit -m "commit-message"<br>

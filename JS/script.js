@@ -7,6 +7,11 @@ function myFunction() {
    	element[i].classList.toggle("text_class");
 
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 window.addEventListener('load', function () {
 	$("#checkbox1").click(myFunction);
 	$('#checkbox2').click(myFunction);

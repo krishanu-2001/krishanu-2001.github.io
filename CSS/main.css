@@ -122,17 +122,6 @@ body{
   color: white;
 }
 
-.card {
-  margin-bottom: 20px;
-  border: 2px solid #bbb;
-
-}
-
-.card-font {
-  font-family: Cambria;
-  color: black;
-}
-
 .div1{
   /*background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
   */
@@ -432,6 +421,7 @@ input:checked + .slider:before {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 
 @-webkit-keyframes fade {
   from {opacity: .4}

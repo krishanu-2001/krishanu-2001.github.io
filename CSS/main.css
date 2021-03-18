@@ -118,15 +118,6 @@ body{
   background: #112233;
 }
 
-a {
-  color: grey;
-}
-
-.background-tint {
-  background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
-  filter: brightness(80%);
-}
-
 .text_class{
   color: white;
 }

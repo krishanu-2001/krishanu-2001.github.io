@@ -1,18 +1,11 @@
 function myFunction() {
-   setTimeout(function(){ 
-	   var element = document.querySelectorAll(".abcd");
-	   for(let i=0;i<element.length;i++)
-	      element[i].classList.toggle("body_class");
-	   var element = document.querySelectorAll(".abc");
-	   for(let i=0;i<element.length;i++)
-	   	element[i].classList.toggle("text_class");
-	   var element = document.querySelectorAll(".abcde");
-	   for(let i=0;i<element.length;i++)
-	      element[i].classList.toggle("header_class");
-	   var element = document.querySelectorAll(".navbar-light");
-	   for(let i=0;i<element.length;i++)
-	      element[i].classList.toggle("navbar-dark");
-	}, 400);
+   var element = document.querySelectorAll(".abcd");
+   for(let i=0;i<element.length;i++)
+      element[i].classList.toggle("body_class");
+   var element = document.querySelectorAll(".abc");
+   for(let i=0;i<element.length;i++)
+   	element[i].classList.toggle("text_class");
+
 }
 
 $(function () {

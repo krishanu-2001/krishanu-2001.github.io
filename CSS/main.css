@@ -122,14 +122,6 @@ body{
   color: white;
 }
 
-.abcde{
-  background: white;
-}
-
-.header_class{
-  background: black;
-}
-
 .card {
   margin-bottom: 20px;
   border: 2px solid #bbb;
@@ -152,6 +144,7 @@ body{
 .div12{
   /*background: linear-gradient(to left, #cc66ff 0%, #99ccff 100%);
   */
+  background-image: url("../PNG/backg7.png");
   margin-bottom: 10px;
   padding: 50px;
 }
@@ -177,27 +170,6 @@ body{
   
 }
 
-.nav-good-border1{
-  opacity: 1;
-  position: fixed; 
-  top: 0; 
-  z-index: 999; 
-  width: 100%;
-  border-left: 10px solid;
-  border-right: 0px;
-  border-style: solid;
-  border-bottom: 10px solid blue;
-
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 10 100%;
-  box-shadow: 0px 0px 10px 0px #ddd;
-
-}
-
 .triangle-right{
   width: 60%;
   float: right;
@@ -219,19 +191,14 @@ body{
 .switch {
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 10px;
+  width: 60px;
+  height: 34px;
 }
 
 .switch input { 
   opacity: 0;
   width: 0;
   height: 0;
-}
-
-.Hover-turn{
-  opacity: 1;
-  color: grey;
 }
 
 .slider {
@@ -284,8 +251,15 @@ input:checked + .slider:before {
 
 }
 
+#Xswitch:hover{
+  border:2px white solid;
+  color: #717171;
+  padding: 0px;
+	border-radius: 3px;
+	background-color: #111111;
+}
 #Xswitch:focus{
-  border:2px red solid;
+  border:2px white solid;
   padding: 0px;
 	border-radius: 3px;
 	background-color: #111111;

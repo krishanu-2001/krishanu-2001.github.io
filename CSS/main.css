@@ -300,6 +300,31 @@ input:checked + .slider:before {
 	background-color: #111111;
 }
 
+.git_id_shift{
+  margin: 2px;
+}
+
+.git_id_shift:hover{
+	margin: 2px;
+  border:2px white solid;
+	border-radius: 100px;
+	background-color: #aaaafa;
+}
+
+.git_id_light_dark{
+  margin: 2px;
+  border:2px white solid;
+	border-radius: 100px;
+	background-color: #aaaafa;
+
+}
+
+.git_id_light_dark:hover{
+	border:2px white solid;
+	border-radius: 100px;
+  background-image: linear-gradient(315deg, #a35160 10%, #fff 100%);
+}
+
 #git_id:hover{
 	border:2px white solid;
 	border-radius: 100px;

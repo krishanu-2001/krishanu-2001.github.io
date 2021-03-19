@@ -12,6 +12,9 @@ function myFunction() {
 	   var element = document.querySelectorAll(".navbar-light");
 	   for(let i=0;i<element.length;i++)
 	      element[i].classList.toggle("navbar-dark");
+		 var element = document.querySelectorAll(".git_id_shift");
+	   for(let i=0;i<element.length;i++)
+	      element[i].classList.toggle("git_id_light_dark");
 	}, 400);
 }
 

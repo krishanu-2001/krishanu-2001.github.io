@@ -67,13 +67,16 @@ label{
 	margin-left: 10px;
 	color: #000000;
 	padding-top: 5px;
-	padding-left: 0px;
+	padding-left: 4px;
 	border:2px black solid;
 	border-radius: 20px;
-	background-color: #9999ff;
+	background-color: #b8b8c7;
 }
 .strong_a {
-	text-shadow: 0.5px 0px 0px black;
+	color: rgba(128, 126, 14, 0.667);
+}
+.strong_a > li > a{
+	color: rgba(12, 116, 109, 0.667);
 }
 
 

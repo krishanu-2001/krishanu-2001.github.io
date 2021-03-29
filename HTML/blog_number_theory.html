@@ -488,42 +488,45 @@ vector<ll> divisors(ll x)//O( sqrt(n) )
 			<span class = "sub_title">Special techniques for 1 to n type factor counts</span>
 			<br><br>
 			<p>
-				Many divisors counting, and range 1 to N processing can be done by the following: 
+				This technique generates smallest prime factor for every number 1 to N in O(NLogLogN). Useful for finding primefactors in O(logN) and primality test.
 <pre class = "language-cpp line-numbers">
 <code>
-// sample program to get minimum prime divisor of all numbers 1 to N
-for(int i=2;i< N; i++)
-{
-	if(!visited[i])
-	for(int j=i;j< N;j+=i)
-	{
-		sml[j] = i;//smallest prime divisor sml of number i, sml[1] = 0
-	}
-}
-
-// sample program to get prime factors power's sum
-// for 1 - N all numbers using smallest prime divisor and recursion
-for(int i=2; i< N ; i++)
-{
-	count[i] = 0;
-	ll temp_i = i;
-	while(temp_i % sml[i] == 0)
-	{
-		count[i]++;
-	}
-	count[i] += count[temp_i];
-}
-
+	/* 
+	* Below is faster sieve in nloglogn
+	* Gives sml in time
+	* Use sml to generate all prime factors as commented
+	*/
+ const ll N = 2*1e7+2;
+ vector<ll>primes;
+ vector<ll>sml(N+1,0);
+ void preprocess(){
+		 for(int i = 2; i <= N; i++) {
+				 if(!sml[i]) { sml[i] = i; primes.push_back(i); }
+				 for(int j : primes) {
+						 if(i * j > N) break;
+						 sml[i * j] = j;
+						 if(i % j == 0) break;
+				 }
+		 }
+ }
+ 
+ /*
+		 int cnt=0,last=0;
+		 while(x > 1){
+			 int t = sml[x];
+			 if(last != t){
+				 cnt++;
+				 last = t;
+			 }
+			 x /= t;
+		 }
+		 // cnt is number of prime factors
+		 // Do cnt++ for every step to count power of all prime factors
+ */
+ 
 </code>
 </pre>
 				<div>
-					Yes you have guessed it right. This program gives the sum of power's of prime factors:<br>
-					<div class="highlight">24 = 2 X 2 X 2 X 3 
-						= 2<sup>3</sup> 3<sup>1</sup><br>
-						count[24] = 3+1 = 4 <br>
-
-					</div>
-
 					<div>
 						Some analysis on time complexity:<br>
 						T = N + (N/2) + (N/3) ...<br> 
@@ -572,10 +575,10 @@ ll phi(ll x)
 				<div>
 					One Question that can be solved using PHI is:
 					<br>
-					Q) Given integer x, calculate sz( LCM(i,n) ), for i in range(1,N]<br>
-					answer to query is n*[1+sz(PHI(i)])/2 , <br>
+					Q) Given integer x, calculate &sum;( LCM(i,n) ), for i in range(1,N]<br>
+					answer to query is n*[1+&sum;(PHI(i)])/2 , <br>
 					<span class="notes">
-						Note: sz(PHI(i)) = summation PHI[i] for i in range(1,n]
+						Note: &sum;(PHI(i)) = summation PHI[i] for i in range(1,n]
 					</span> <br>
 
 				</div>
@@ -593,8 +596,8 @@ ll phi(ll x)
 					T-Primes <label>cf</label><label>primes</label>
 				</a>
 				<br>
-				<a href="https://codeforces.com/problemset/problem/711/E">			Birthday Paradox<label>cf</label><label>CRT</label>
-					<label>factorials</label><label>GCD</label>
+				<a href="https://codeforces.com/problemset/problem/711/E">			Birthday Paradox <label>cf</label><label>CRT
+				</label><label>factorials</label><label>GCD</label>
 				</a>
 				<br>
 				<a href="https://codeforces.com/problemset/problem/1062/B">

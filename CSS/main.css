@@ -98,6 +98,24 @@ a {
   padding: 50px;
 }
 
+.copy-text{
+  background-color: white;
+  border: 2px #99ccff solid;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: oblique;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.copy-text:hover, .copy-text:active{
+  background-color: rgb(180, 241, 180);
+}
+
+
 .Announcement-body{
   box-shadow: 4px 4px 5px black;
   margin: 0;
@@ -418,6 +436,11 @@ input:checked + .slider:before {
   border-radius: 20px;
 }
 
+.media{
+  padding: 10px;
+  display: block;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -447,4 +470,12 @@ background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
 
   border: 1px;
   border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-fix{
+    font-size: 0px;
+    color: white;
+    background-color: #111111;
+  }
 }

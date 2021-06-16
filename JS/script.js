@@ -4,7 +4,7 @@ const settings = {
   url: "https://community-open-weather-map.p.rapidapi.com/find?q=delhi&cnt=1&mode=null&lon=0&type=link%2C%20accurate&lat=0&units=metric",
   method: "GET",
   headers: {
-    "x-rapidapi-key": "c2b1eea7ecmsh33cd6abc517fa41p150cd8jsndad56975c1fe",
+    "x-rapidapi-key": "4ab67d69e3msh1809b74148e0d91p1f4bcejsnc240ad06e2f3",
     "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
   },
 };

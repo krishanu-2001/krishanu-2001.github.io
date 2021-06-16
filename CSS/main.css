@@ -410,6 +410,26 @@ input:checked + .slider:before {
   top: 0;
 }
 
+.close_light{
+  display: none;
+  font-size: 1em;
+}
+
+.open_light{
+  display: block;
+  font-size: 1em;
+}
+
+.close_dark{
+  display: block;
+  font-size: 1em;
+}
+
+.open_dark{
+  display: none;
+  font-size: 1em;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

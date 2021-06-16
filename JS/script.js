@@ -26,6 +26,12 @@ function myFunction() {
     var element = document.querySelectorAll(".git_id_shift");
     for (let i = 0; i < element.length; i++)
       element[i].classList.toggle("git_id_light_dark");
+    var element = document.querySelectorAll(".close_light");
+    for (let i = 0; i < element.length; i++)
+      element[i].classList.toggle("open_light");
+    var element = document.querySelectorAll(".close_dark");
+    for (let i = 0; i < element.length; i++)
+      element[i].classList.toggle("open_dark");
   }, 400);
 }
 
@@ -53,20 +59,20 @@ window.addEventListener(
     $("#checkbox2").click(myFunction);
     $("#copy-container").click(copyFunction);
 
-    $.ajax(settings).done(function (response) {
-      console.log('For detailed weather see console below')
-      console.log(response)
-      var weatherApi = response.list[0];
-      var city = weatherApi.name;
-      var temp = Math.round(weatherApi.main.temp);
-      var maxTemp = weatherApi.main.temp_max;
-      var minTemp = weatherApi.main.temp_min;
-      var avgTemp = weatherApi.main.feels_like;
-      var weather = weatherApi.weather[0].icon;
-      var wind = weatherApi.wind.speed;
-      document.querySelectorAll("#weather_img")[0].setAttribute("src", `http://openweathermap.org/img/wn/${weather}@2x.png`);
-      document.querySelectorAll("#weather_temp")[0].innerHTML = temp;
-    });
+    // $.ajax(settings).done(function (response) {
+    //   console.log('For detailed weather see console below')
+    //   console.log(response)
+    //   var weatherApi = response.list[0];
+    //   var city = weatherApi.name;
+    //   var temp = Math.round(weatherApi.main.temp);
+    //   var maxTemp = weatherApi.main.temp_max;
+    //   var minTemp = weatherApi.main.temp_min;
+    //   var avgTemp = weatherApi.main.feels_like;
+    //   var weather = weatherApi.weather[0].icon;
+    //   var wind = weatherApi.wind.speed;
+    //   document.querySelectorAll("#weather_img")[0].setAttribute("src", `http://openweathermap.org/img/wn/${weather}@2x.png`);
+    //   document.querySelectorAll("#weather_temp")[0].innerHTML = temp;
+    // });
 
     // var city = "Delhi";
     // var temp = 38;

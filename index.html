@@ -9,10 +9,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> 
   <link rel="stylesheet" type="text/css" href="./CSS/main.css">
   <link rel="stylesheet" type="text/css" href="./CSS/typewriter.css" />
   <link rel="stylesheet" type="text/css" href="./CSS/animation.css" />
+  <link rel="stylesheet" type="text/css" href="./CSS/weather.css" />
   <script type="text/javascript" src="./JS/script.js"></script>
   <script type="text/javascript" src="./JS/typewriter.js"></script>
 
@@ -96,60 +98,88 @@
               </div>
                 <br />
                 <br />
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="./PNG/char_f.png" class="media-object" style="width:45px">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Full Stack Developer</h4>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="./PNG/char_c.png" class="media-object" style="width:45px">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Competitive Coder</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xl-8 col-fix">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img src="./PNG/char_f.png" class="media-object" style="width:45px">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Full Stack Developer</h4>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="./PNG/char_u.png" class="media-object" style="width:45px">
-                                    <img src="./PNG/char_i.png" class="media-object" style="width:45px">
-                                    <img src="./PNG/char_x.png" class="media-object" style="width:45px">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Developer</h4>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img src="./PNG/char_c.png" class="media-object" style="width:45px">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Competitive Coder</h4>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-5">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="./PNG/char_m.png" class="media-object" style="width:45px">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img src="./PNG/char_u.png" class="media-object" style="width:45px">
+                                                <img src="./PNG/char_i.png" class="media-object" style="width:45px">
+                                                <img src="./PNG/char_x.png" class="media-object" style="width:45px">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Developer</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img src="./PNG/char_m.png" class="media-object" style="width:45px">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Music Lover</h4>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4">
+                            <div class="weather_body">    
+                            <div class="card">
+                                <div class="container_flex_weather">
+                                    <div class="inbuilt">
+                                        <h4 id="weather_city">
+                                            <i class="fa fa-map-marker"></i>
+                                            Delhi, IN
+                                        </h4>
                                     </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Music Lover</h4>
+                                    <div class="row">
+                                        <div class="inbuilt col col-sm-8">
+                                            <h1><span id="weather_temp">46</span>&deg;</h1>
+                                        </div>
+                                        <div class="col col-sm-4">
+                                            <img src="http://openweathermap.org/img/wn/10d@2x.png" id="weather_img"/>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
+                </div>
                 <br />
                 <br />
                 <div class="row" >

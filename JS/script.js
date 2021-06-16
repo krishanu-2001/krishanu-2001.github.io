@@ -59,31 +59,31 @@ window.addEventListener(
     $("#checkbox2").click(myFunction);
     $("#copy-container").click(copyFunction);
 
-    // $.ajax(settings).done(function (response) {
-    //   console.log('For detailed weather see console below')
-    //   console.log(response)
-    //   var weatherApi = response.list[0];
-    //   var city = weatherApi.name;
-    //   var temp = Math.round(weatherApi.main.temp);
-    //   var maxTemp = weatherApi.main.temp_max;
-    //   var minTemp = weatherApi.main.temp_min;
-    //   var avgTemp = weatherApi.main.feels_like;
-    //   var weather = weatherApi.weather[0].icon;
-    //   var wind = weatherApi.wind.speed;
-    //   document.querySelectorAll("#weather_img")[0].setAttribute("src", `http://openweathermap.org/img/wn/${weather}@2x.png`);
-    //   document.querySelectorAll("#weather_temp")[0].innerHTML = temp;
-    // });
+    $.ajax(settings).done(function (response) {
+      console.log('For detailed weather see console below')
+      console.log(response)
+      var weatherApi = response.list[0];
+      var city = weatherApi.name;
+      var temp = Math.round(weatherApi.main.temp);
+      var maxTemp = weatherApi.main.temp_max;
+      var minTemp = weatherApi.main.temp_min;
+      var avgTemp = weatherApi.main.feels_like;
+      var weather = weatherApi.weather[0].icon;
+      var wind = weatherApi.wind.speed;
+      document.querySelectorAll("#weather_img")[0].setAttribute("src", `http://openweathermap.org/img/wn/${weather}@2x.png`);
+      document.querySelectorAll("#weather_temp")[0].innerHTML = temp;
+    });
 
-    // var city = "Delhi";
-    // var temp = 38;
-    // var maxTemp = 38;
-    // var minTemp = 38;
-    // var avgTemp = 42.29;
-    // var weather = "http://openweathermap.org/img/wn/10n@2x.png";
-    // var wind = 3.09;
+    var city = "Delhi";
+    var temp = 38;
+    var maxTemp = 38;
+    var minTemp = 38;
+    var avgTemp = 42.29;
+    var weather = "http://openweathermap.org/img/wn/10n@2x.png";
+    var wind = 3.09;
 
-    // document.querySelectorAll('#weather_img')[0].setAttribute('src', weather);
-    // document.querySelectorAll('#weather_temp')[0].innerHTML = temp;
+    document.querySelectorAll('#weather_img')[0].setAttribute('src', weather);
+    document.querySelectorAll('#weather_temp')[0].innerHTML = temp;
 
     var slideIndex = 0;
     showSlides();

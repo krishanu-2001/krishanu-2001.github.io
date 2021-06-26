@@ -411,7 +411,7 @@ input:checked + .slider:before {
 }
 
 .close_light{
-  display: none;
+  display: none !important;
   font-size: 1em;
 }
 

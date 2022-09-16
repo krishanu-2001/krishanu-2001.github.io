@@ -292,13 +292,13 @@ input:checked + .slider:before {
 
 .Xcard-body {
   text-align: center;
-  border: 2px solid #bbb;
-  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px #ddd;
+  border-radius: 2px;
   margin: 10%;
 }
 
 .Xcard-body:hover {
-  box-shadow: 0px 0px 100px 0px #ddd;
+  box-shadow: 0px 3px 4px 0px #ddd;
 }
 
 .xCard-img {

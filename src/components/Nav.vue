@@ -36,16 +36,6 @@
         </div>
       </div>
     </div>
-    <transition name="fade">
-      <div class="wrapper">
-        <a href="/">
-          <div class="icon facebook">
-            <div class="tooltip">Home</div>
-            <i class="fa fa-home"></i>
-          </div>
-        </a>
-      </div>
-    </transition>
   </div>
 </template>
 

@@ -1,9 +1,10 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
     <div class="links">
-      <router-link to="/about">History</router-link>
-      <router-link to="/about/contact">Contact</router-link>
+      <router-link to="/">Objective</router-link>
+      <router-link to="/research">Research</router-link>
+      <router-link to="/publications">Publications</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
     <div class="content">
       <router-view></router-view>
@@ -20,16 +21,16 @@
 }
 
 .links {
-  width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .links a {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  width: 150px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
   text-decoration: none;
   background-color: #e7e7e7;
   color: #000000;
@@ -38,13 +39,13 @@
 
 .links .router-link-exact-active {
   background-color: #cc0000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .content {
-  width: 1200px;
+  width: auto;
   background-color: #e7e7e7;
   margin-top: 1rem;
-  height: 800px;
+  height: auto;
 }
 </style>

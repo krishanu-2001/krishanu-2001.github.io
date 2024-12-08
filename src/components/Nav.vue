@@ -25,7 +25,7 @@
       </div>
       <div class="media-row">
         <div class="nameplate">
-          <div class="titleText">Made By</div>
+          <div class="titleText">Made with &#9829; by</div>
           <div>Krishanu Saini</div>
         </div>
         <div class="trackpad trackpad-sml"></div>

@@ -1,2 +1,3 @@
 # spindle-webpage
-Main Website of Spindle
+
+Homepage of Spindle

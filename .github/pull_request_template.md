@@ -29,29 +29,7 @@ Closes #
 - 
 - 
 
-## Screenshots/Recordings
+## Evidence
 
 <!-- If applicable, add screenshots or recordings to demonstrate the changes -->
 
-## Testing
-
-<!-- Describe how you tested your changes -->
-
-- [ ] I have tested this locally
-- [ ] I have added/updated tests that prove my fix is effective or my feature works
-- [ ] New and existing unit tests pass locally with my changes
-
-## Checklist
-
-<!-- Mark completed items with an "x" -->
-
-- [ ] My code follows the project's style guidelines
-- [ ] I have performed a self-review of my code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings or errors
-- [ ] I have checked my code for potential security issues
-
-## Additional Notes
-
-<!-- Add any additional context or notes for reviewers -->

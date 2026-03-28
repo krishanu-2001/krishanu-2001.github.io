@@ -9,7 +9,7 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 export default [
   // Global ignores
   {
-    ignores: ['node_modules/**', 'dist/**', 'build/**', '.next/**'],
+    ignores: ['node_modules/**', 'dist/**', 'build/**', '.next/**', '.vite/**'],
   },
   // JavaScript recommended
   js.configs.recommended,

@@ -1,0 +1,117 @@
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.search-modal {
+  width: 560px;
+  max-width: 90vw;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.search-modal__input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-modal__icon {
+  color: var(--text-muted);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.search-modal__input {
+  width: 100%;
+  padding: 0.875rem 0.75rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+.search-modal__input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-modal__results {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.search-modal__empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.search-result {
+  display: block;
+  padding: 0.625rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.1s;
+}
+
+.search-result:hover,
+.search-result.focused {
+  background: var(--bg-hover);
+}
+
+.search-result__page {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.search-result__title {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin-top: 0.125rem;
+}
+
+.search-result__snippet {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-modal__footer {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
+
+.search-modal__footer kbd {
+  font-family: inherit;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.625rem;
+}

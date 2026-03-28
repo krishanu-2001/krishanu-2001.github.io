@@ -1,0 +1,98 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width, 260px) 1fr var(--toc-width, 220px);
+  grid-template-rows: var(--navbar-height, 56px) 1fr;
+  grid-template-areas:
+    'navbar navbar navbar'
+    'sidebar main toc';
+  min-height: 100vh;
+}
+
+.app-layout__navbar {
+  grid-area: navbar;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-layout__sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: var(--navbar-height, 56px);
+  height: calc(100vh - var(--navbar-height, 56px));
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  background: var(--bg-sidebar);
+}
+
+.app-layout__main {
+  grid-area: main;
+  min-width: 0;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 3rem 4rem;
+}
+
+.app-layout__toc {
+  grid-area: toc;
+  position: sticky;
+  top: var(--navbar-height, 56px);
+  height: calc(100vh - var(--navbar-height, 56px));
+  overflow-y: auto;
+  border-left: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+}
+
+/* Mobile overlay backdrop */
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .app-layout {
+    grid-template-columns: var(--sidebar-width, 260px) 1fr;
+    grid-template-areas:
+      'navbar navbar'
+      'sidebar main';
+  }
+  .app-layout__toc {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'navbar'
+      'main';
+  }
+  .app-layout__sidebar {
+    position: fixed;
+    top: var(--navbar-height, 56px);
+    left: 0;
+    width: 280px;
+    height: calc(100vh - var(--navbar-height, 56px));
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 90;
+  }
+  .app-layout__sidebar.open {
+    transform: translateX(0);
+  }
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: var(--navbar-height, 56px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+  }
+  .sidebar-overlay.visible {
+    display: block;
+  }
+  .app-layout__main {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+}

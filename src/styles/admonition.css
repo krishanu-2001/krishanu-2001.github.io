@@ -1,0 +1,36 @@
+.admonition {
+  border-left: 3px solid var(--accent);
+  background: var(--bg-admonition);
+  border-radius: 0 8px 8px 0;
+  padding: 0.875rem 1rem;
+  margin: 1rem 0;
+}
+
+.admonition__title {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.admonition__content {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.admonition__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admonition__content li {
+  margin-bottom: 0.25rem;
+}
+
+.admonition__content a {
+  color: var(--accent);
+}

@@ -5,7 +5,7 @@ type Theme = 'dark' | 'light'
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {
     const stored = localStorage.getItem('theme')
-    return stored === 'light' || stored === 'dark' ? stored : 'dark'
+    return stored === 'light' || stored === 'dark' ? stored : 'light'
   })
 
   useEffect(() => {

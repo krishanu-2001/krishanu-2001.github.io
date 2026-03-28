@@ -7,6 +7,10 @@
 - Developed the firm's central trade restriction platform, Control Room.
 - Designed a system for managing the lifecycle of trading restrictions across public and private desks.
 
+**Summer Analyst** · Internship · May 2022 – Jul 2022
+
+- Worked in the domain of Data Engineering.
+
 ---
 
 ## PineGap
@@ -27,14 +31,6 @@
 **Undergraduate Researcher** · Part-time · Jan 2022 – Jan 2023
 
 - Explaining Video Anomalies with GANs. Researched on human crowd patterns and abnormal events using Generative models.
-
----
-
-## Goldman Sachs
-
-**Summer Analyst** · Internship · May 2022 – Jul 2022
-
-- Worked in the domain of Data Engineering.
 
 ---
 
